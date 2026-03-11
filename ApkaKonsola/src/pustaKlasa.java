@@ -1,12 +1,25 @@
 public class pustaKlasa {
     int liczba = 0;
-    String nazwa;
+    private char nazwa;
 
-    pustaKlasa(String nazwa){
+    pustaKlasa(char nazwa){
         this.nazwa = nazwa;
     }
 
-    public String nazwa(){
+    public char nazwa(){
         return nazwa;
+    }
+
+    public int dzialanie(int a, int b, char znak){
+        if(znak=='+'){
+            return a+b;
+        }else if(znak=='-'){
+            return a-b;
+        }else if(znak=='*'){
+            return a*b;
+        }else if(znak=='/'){
+            return a/b;
+        }
+        return 0;
     }
 }
