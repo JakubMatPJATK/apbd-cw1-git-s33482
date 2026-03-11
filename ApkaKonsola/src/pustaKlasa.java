@@ -5,4 +5,8 @@ public class pustaKlasa {
     pustaKlasa(String nazwa){
         this.nazwa = nazwa;
     }
+
+    public String nazwa(){
+        return nazwa;
+    }
 }

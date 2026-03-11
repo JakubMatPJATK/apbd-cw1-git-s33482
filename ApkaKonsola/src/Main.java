@@ -4,11 +4,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int i;
-        pustaKlasa p = new pustaKlasa("klasa1");
+        pustaKlasa p = new pustaKlasa("ile można");
         do{
             System.out.println("Podaj liczbe inna niż 0");
             i = sc.nextInt();
 
+
         }while (i!=0);
+
+        System.out.println("Wreszcie dałeś zero " + p.nazwa());
     }
 }
