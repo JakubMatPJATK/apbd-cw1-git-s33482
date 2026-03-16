@@ -19,7 +19,8 @@ public class Main {
         lista.add(7);
         lista.add(8);
 
-        int[] lista2 = {2,4,5,4,1};
+
+        int[] lista2 = {2,4,5,4,1,1,6,3,8};
         System.out.println(p.dzialanie(lista.get(0),lista.get(1),p.nazwa()));
     }
 }
