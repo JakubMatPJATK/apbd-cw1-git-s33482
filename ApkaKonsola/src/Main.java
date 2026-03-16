@@ -2,6 +2,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+    public static double calculateAverage(int[] values){
+        double result = 0;
+        for (int value : values) {
+            result += value;
+        }
+
+        return result/values.length;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int i;
@@ -20,16 +29,7 @@ public class Main {
         lista.add(8);
 
         int[] lista2 = {1,6,3,8,2,4,5,4,1};
-
         System.out.println(p.dzialanie(lista.get(0),lista.get(1),p.nazwa()));
-    }
-
-    double CalculateAverage(int[] values){
-        double result = 0;
-        for (int i = 0; i < values.length; i++) {
-            result += values[i];
-        }
-
-        return result/values.length;
+        System.out.println(calculateAverage(lista2));
     }
 }
